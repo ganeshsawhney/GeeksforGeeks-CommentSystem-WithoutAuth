@@ -47,7 +47,11 @@ INSTALLED_APPS += (
     'django.contrib.sites',
 )
 
-FLUENT_COMMENTS_EXCLUDE_FIELDS = ('email', 'url')
+INSTALLED_APPS += (
+    'threadedcomments',
+)
+
+FLUENT_COMMENTS_EXCLUDE_FIELDS = ('title','email', 'url')
 COMMENTS_APP = 'fluent_comments'
 
 
