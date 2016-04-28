@@ -40,6 +40,21 @@ INSTALLED_APPS = [
     'blog',
 ]
 
+INSTALLED_APPS += (
+    'fluent_comments',
+    'crispy_forms',
+    'django_comments',
+    'django.contrib.sites',
+)
+
+FLUENT_COMMENTS_EXCLUDE_FIELDS = ('email', 'url')
+COMMENTS_APP = 'fluent_comments'
+
+
+SITE_ID = 1
+
+
+
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

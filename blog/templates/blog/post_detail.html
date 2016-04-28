@@ -13,4 +13,11 @@
 		{% endif %}	
         <p>{{ post.text|linebreaks }}</p>
     </div>
+
+    <div class="comments">
+        {% load comments %}
+        {% render_comment_form for post %}
+        {% render_comment_list for post %}    
+    </div>
+
 {% endblock %}
