@@ -49,6 +49,9 @@ INSTALLED_APPS += (
 
 INSTALLED_APPS += (
     'threadedcomments',
+    'markupfield',
+    'markdown_deux',
+    'django_markdown2',
 )
 
 FLUENT_COMMENTS_EXCLUDE_FIELDS = ('title','email', 'url')
