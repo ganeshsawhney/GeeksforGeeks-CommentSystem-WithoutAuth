@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 from django.core.urlresolvers import reverse
 
-
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
@@ -11,6 +10,7 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
+    enable_comments = models.BooleanField("Enable comments", default=True)
 
     def publish(self):
         self.published_date = timezone.now()
