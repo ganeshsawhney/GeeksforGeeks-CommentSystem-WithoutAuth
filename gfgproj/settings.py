@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -51,8 +52,11 @@ INSTALLED_APPS += (
     'markupfield',
     'markdown_deux',
     'django_markdown2',
-    'ratings',
+    # 'ratings',
+    'star_ratings',
 )
+
+STAR_RATINGS_RANGE=10
 
 FLUENT_COMMENTS_EXCLUDE_FIELDS = ('title','email', 'url')
 COMMENTS_APP = 'fluent_comments'
@@ -101,6 +105,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.request',
             ],
         },
     },
