@@ -54,7 +54,6 @@ INSTALLED_APPS += (
     'django_markdown2',
     # 'ratings',
     'star_ratings',
-    'mathfilters',
 )
 
 STAR_RATINGS_RANGE=10
