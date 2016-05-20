@@ -63,14 +63,14 @@ COMMENTS_APP = 'fluent_comments'
      
 
 
-AKISMET_API_KEY = "fa076d357889"
-AKISMET_BLOG_URL = "http://127.0.0.1:8000"        # Optional, to override auto detection
-AKISMET_IS_TEST = False                        # Enable to make test runs
+# AKISMET_API_KEY = "fa076d357889"
+# AKISMET_BLOG_URL = "http://127.0.0.1:8000"        # Optional, to override auto detection
+# AKISMET_IS_TEST = False                        # Enable to make test runs
 
-FLUENT_CONTENTS_USE_AKISMET = True             # Enabled by default when AKISMET_API_KEY is set.
-FLUENT_COMMENTS_CLOSE_AFTER_DAYS = None        # Auto-close comments after N days
-FLUENT_COMMENTS_MODERATE_AFTER_DAYS = None     # Auto-moderate comments after N days.
-FLUENT_COMMENTS_AKISMET_ACTION = 'moderate'    # Set to 'moderate' or 'delete'
+# FLUENT_CONTENTS_USE_AKISMET = True             # Enabled by default when AKISMET_API_KEY is set.
+# FLUENT_COMMENTS_CLOSE_AFTER_DAYS = None        # Auto-close comments after N days
+# FLUENT_COMMENTS_MODERATE_AFTER_DAYS = None     # Auto-moderate comments after N days.
+# FLUENT_COMMENTS_AKISMET_ACTION = 'moderate'    # Set to 'moderate' or 'delete'
 
 
 COMMENTS_ALLOW_PROFANITIES=False
