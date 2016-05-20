@@ -5,3 +5,4 @@ from django_comments.models import CommentFlag, BaseCommentAbstractModel, Commen
 admin.site.register(Post)
 
 admin.site.register(CommentFlag)
+admin.site.register(Comment)
